@@ -13,7 +13,7 @@ class PlaceHolderServiceTest extends TestCase
         # If i were returning the response from get we could test for HTTP Status and json format through
         # $this->json('get', url)
         # ->assertStatus(Response::HTTP_OK)
-        # ->assertJsonStructure(
+        # ->assertJsonStructure('DATA' => [ '*' => [ 'title, 'body', 'id'] ])
         $this->assertArrayHasKey('body', $response['data'][0]);
     }
 }

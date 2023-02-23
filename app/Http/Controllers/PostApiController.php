@@ -6,7 +6,7 @@ use App\Models\Posts;
 use Illuminate\Http\Request;
 use App\Services\PlaceHolderService;
 
-class PostsController extends Controller
+class PostApiController extends Controller
 {
     public function fetch()
     {
