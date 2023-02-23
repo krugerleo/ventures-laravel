@@ -6,14 +6,15 @@ class PlaceHolderService{
     public function retrievePosts(){
         $url = 'https://jsonplaceholder.typicode.com/posts';
         $response = Http::get($url);
-        $json_response = json_decode($response, false);
+        $json_response = json_decode($response->body(), true);
 
         foreach($json_response as $post){
-            if($post->userId){
-                unset($post->userId);
+            if($post['userId']){
+                unset($post['userId']);
             }
         }
-        
-        return $json_response;
+
+        $data['data'] = $json_response;
+        return $data;
     }    
 }
