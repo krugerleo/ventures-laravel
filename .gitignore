@@ -1,3 +1,24 @@
+<<<<<<< HEAD
+=======
+/.phpunit.cache
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.env.production
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+/.fleet
+/.idea
+/.vscode
+
+
+>>>>>>> 13e4f8b (initial commit)
 /vendor/
 node_modules/
 npm-debug.log
@@ -20,4 +41,8 @@ storage/*.key
 Homestead.yaml
 Homestead.json
 /.vagrant
+<<<<<<< HEAD
 .phpunit.result.cache
+=======
+.phpunit.result.cache
+>>>>>>> 13e4f8b (initial commit)
