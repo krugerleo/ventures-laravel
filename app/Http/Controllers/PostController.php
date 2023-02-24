@@ -11,6 +11,8 @@ class PostController extends Controller
      */
     public function index()
     {
+        // Can check if table doesnt exists preventing error, but error is better here for the purpose of this project
+        // Schema::hasTable('mytable');
         $posts = app('App\Http\Controllers\PostApiController')->index();
         return view('Post.home', ['posts' => $posts]);
     }
