@@ -1,6 +1,11 @@
 ## Quick start
 - To run this project you must have installed Composer and Docker(optional)
-- run to install dependencies
+- to install the project run:
+
+```bash
+php composer update
+```
+- then 
 ```bash
 php composer install
 ```
