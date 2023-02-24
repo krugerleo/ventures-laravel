@@ -1,11 +1,6 @@
 ## Quick start
-- To run this project you must have installed Composer and Docker(optional)
-- to install the project run:
-
-```bash
-php composer update
-```
-- then 
+- To run this project you must have installed [Composer](https://getcomposer.org/) and [Docker](https://www.docker.com/) if you are running the project with laravel sail.
+- run to install dependencies
 ```bash
 php composer install
 ```
