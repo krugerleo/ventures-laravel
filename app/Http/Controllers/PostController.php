@@ -11,7 +11,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $posts = app('App\Http\Controllers\PostApiController')->index();
+        return view('Post.home', ['posts' => $posts]);
     }
 
     /**
