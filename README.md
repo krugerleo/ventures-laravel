@@ -61,21 +61,8 @@ There is a simple Rest API to work with Post:
 - DELETE    localhost/api/post/{id}  
 
 
-
-## Quick start
-- run to install dependencies
-```bash
-php composer install
-```
-- run sail to start the project
-```bash
-./vendor/bin/sail up
-```
-
-- Once the project is running you can execute commands through sail with :
-```bash
-./vendor/bin/sail artisan migrate
-./vendor/bin/sail artisan placeholder:posts
-```
-
-- you can see the posts in: localhost:80/post or through the api localhost:80/api/post
+## Further work
+- Better configuration on .env files
+- Add CRUD front-end
+- Build and deploy
+- Authentication
